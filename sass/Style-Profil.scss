@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@500&display=swap');
+@import "Variables";
+@import "Utils";
+
+@include Body;
+
+.container {
+    position: relative;
+    margin-top: 100px;
+}
+
+h2{
+    color: red;
+}
+
+.Btn__Edit{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    background: $color-gold;
+}
+
+.Btn__Deconnexion{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    background: $color-gold;
+}
+
+.cointainer__bottom
+{
+      position: relative;
+      margin-top: -60px;
+      width: 800px;
+      height: 750px;
+      background: $color-background;
+      border-radius: 60px;
+      padding: 40px;
+      padding-top: 10px;
+      box-sizing: border-box;
+      box-shadow: 14px 14px 20px $color-dark-yellow, -14px -14px 20px $color-light-yellow;
+}

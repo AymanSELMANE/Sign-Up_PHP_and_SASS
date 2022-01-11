@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@500&display=swap');
+@import "Variables";
+@import "Utils";
+
+@include Body;
+
+
+.container {
+    position: relative;
+    margin-top: 100px;
+}
+
+input
+{
+    border: none;
+    outline: none;
+    background: $color-background;
+    margin-top: 22px;
+    padding: 15px;
+    padding-left: 20px;
+    width: 250px;
+    height: 10px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px $color-dark-yellow, inset -6px -6px 6px $color-light-yellow;
+
+}
+
+input::placeholder {
+    color: rgb(143, 143, 143);
+}
+
+input
+{
+    &:active, &:focus {
+        border: 2px solid $color-gold;
+    }
+    &:not(:focus):invalid {
+        color: white;
+        background: $color-danger;
+        animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+        box-shadow: inset 5px 5px 5px $color-danger, inset -6px -6px 6px $color-danger;
+    }
+}
+
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX(2%);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX(2% * -1);
+    }
+}
+
+.Button {
+    margin-top: 35px;
+    background: $color-gold;
+    color: #fff;
+    height: 40px;
+    width: 200px;
+    padding-top: 11px;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px $color-dark-yellow, -6px -6px 6px $color-light-yellow;
+    transition: 0.5s;
+    &:hover{
+        background: linear-gradient(#ffa203, #ffed26);
+    }
+  }
+
+.container__top
+{
+    position: absolute;
+    top: -200px;
+    left: -1px;
+    width: 450px;
+    height: 205px;
+    background: $color-background;
+    border-radius: 60px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 14px 14px 20px $color-dark-yellow, -14px -14px 20px $color-light-yellow;
+}
+  
+  .brand__logo {
+
+        height: 100px;
+        width: 100px;
+        background: url("logo/icon_user.svg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: 7px 7px 10px #cac46a, -7px -7px 10px #fffdde;
+  }
+  
+  .brand__title {
+
+        background: $color-gold;
+        width: 150px;
+        border-radius: 20px;
+        margin-top: 12px;
+        margin-left: 109px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            background: linear-gradient(#ffa203, #ffed26);
+        }
+    
+}
+
+  .cointainer__bottom
+  {
+        position: relative;
+        margin-top: 30px;
+        width: 450px;
+        height: 550px;
+        background: $color-background;
+        border-radius: 60px;
+        padding: 40px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        box-shadow: 14px 14px 20px $color-dark-yellow, -14px -14px 20px $color-light-yellow;
+ }
+
+h2{
+    color:$color-gold;
+    animation: h2scale 2500ms linear forwards;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+@keyframes h2scale {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+        background: $color-background;
+        border-radius: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 14px 14px 20px $color-dark-yellow, -14px -14px 20px $color-light-yellow;
+    }
+}

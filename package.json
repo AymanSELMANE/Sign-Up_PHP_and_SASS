@@ -1,0 +1,13 @@
+{
+  "name": "membre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "Sass --watch ./sass/Style-Profil.scss:./Style-Profil.css",
+    "prefix": "postcss ./Style.css --use autoprefixer -d ./prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

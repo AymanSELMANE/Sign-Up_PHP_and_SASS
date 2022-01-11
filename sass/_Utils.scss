@@ -1,0 +1,19 @@
+@mixin Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Body {
+    body{
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fcf59c;
+        @include Center;
+        text-align: center;
+        place-items: center;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+}

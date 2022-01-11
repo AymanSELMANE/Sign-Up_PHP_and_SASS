@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@500&display=swap");
+/* input color invalid*/
+/* input border color*/
+/* l'ombre la plus foncée */
+/* l'ombre la plus claire */
+/* Backround color */
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fcf59c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  margin-top: 100px;
+}
+
+h2 {
+  color: red;
+}
+
+.Btn__Edit {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  background: #ffc60c;
+}
+
+.Btn__Deconnexion {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  background: #ffc60c;
+}
+
+.cointainer__bottom {
+  position: relative;
+  margin-top: -60px;
+  width: 800px;
+  height: 750px;
+  background: #fffab7;
+  border-radius: 60px;
+  padding: 40px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  box-shadow: 14px 14px 20px #cac46a, -14px -14px 20px #fffdde;
+}
+
+/*# sourceMappingURL=Style-Profil.css.map */
